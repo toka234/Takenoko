@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+/*
+GENERAL STYLING
+========================================================*/
+html {
+    font-size: 100%
+}
+body {
+    color: rgb(255, 255, 255);
+    /*GoogleFont*/
+}
+/*
+COMMON
+=========================================================*/
+p {
+    line-height: 1.7;
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+/*
+company
+==========================================================*/
+.company {
+    background-image: url(../images/take_1_Top.jpg);
+    text-align:center;
+    padding-top: 10vh;
+    overflow: hidden;
+}
+
+.title1 {
+    
+    font-size: 5rem;
+    padding-bottom: 5.5vh;
+    margin-top: 5vh;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    /*font-weight:;文字の太さ*/
+    font-weight: bold;
+}
+#sab{
+    margin-top: 14.5vh;
+    font-size: 1.3rem;
+}
+/*CEO
+==========================================================*/
+.CEO {
+    background-image: url(../images/take_2_CEO.jpg);
+    overflow: hidden;
+}
+/*.hako_1 {
+}*/
+/*上のキャッチ*/
+#top {
+    height: auto;
+    width:90%;
+    text-align: right;
+}
+#catch {
+    writing-mode: vertical-rl;
+    text-orientation: opright;
+    font-size: 4.3rem;
+    text-align: left;
+    display: inline-block;
+    padding-left: 30vh;
+    padding-top: 2.2vh;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+}
+#space {
+     margin-top : 10vh;
+}
+/*下の肩書*/
+#bottom {
+    height: 28%;
+    width: auto;
+}
+#position {
+    text-align: left;
+    font-size: 1.4rem;
+    /*padding-top: 5vh;*/
+    padding-left: 15vh;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+#name {
+    text-align: left;
+    font-size: 3.6rem;
+    padding-left: 12vh;
+    margin-left:5vh;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+/*
+Policy
+========================-================================*/
+.policy {
+    background-image: url(../images/take_3_policy.jpg);
+    text-align: left;
+    padding-top: 10vh;
+}
+.slogan1 {
+    text-align: left;
+    font-size: 3.6rem;
+    padding-top: 8vh;
+    padding-left: 18vh;
+    padding-bottom: 6vh;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+}
+
+#slogan2 {
+    line-height: 1.7;
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    margin-left: 14vh;
+}
+/*
+Mission1s
+=========================================================*/
+
+.mission1 {
+    background-image: url(..//images/take_4_mob.jpg);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.id {
+    max-width: 900px;
+    margin: 0 0 0 auto;
+    margin-right: 8rem;
+    padding: 0 1rem;
+
+}
+
+.title2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.content1 {
+}
+.content1 tr {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    line-height: 1.9;/*行間*/
+    letter-spacing: 0.08em;
+    
+}
+
+.content1 th {
+    padding-left: 0.2rem;
+    font-weight:600px;
+}
+
+.content1 td {
+    padding-left: 2rem;/*内側の左側の空白*/
+}
+/*
+Mission2
+==========================================================*/
+.mission2 {
+    background-image: url(..//images/take_5_boss.jpg);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.raid {
+    max-width: 900px;
+    margin: 0 0 0 auto;
+    margin-right: 5rem;
+    padding: 0 1rem;
+
+}
+
+
+/*
+Contact
+===========================================================*/
+
+.contact {
+    background-image: url(..//images/take_6_contact.jpg);
+    text-align:center;
+    padding-top: 3vh;
+    display: table;
+    width: 100%;
+}
+.hako_2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.title3 {
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+}
+img.button:hover{
+ /* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+/* twitter画像をクリックした瞬間 */
+img.button:active{
+	/* 要素を若干下に下げることで、押した感じを出す。*/
+	position: relative;
+	/* 今いる位置から相対的に3px下に配置する。*/
+	top: 9px;
+ 
+}
+
+.contact-sns {
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+}
+.contact-sns a {
+    background: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .75rem 0 0 .125rem;
+    color: #555;
+}
+.contact-sns a:hover {
+    background: rgba(255,255,255,.5);
+}
+
+#tyui {
+    margin-top: 1rem;
+}
+/*
+MOBILE SIZE 
+===========================================================*/
+@media (max-width: 800px) {
+    #sab {
+        margin-top: 17.5vh;
+        font-size: 1rem;
+    }
+    .title1 {
+        font-size: 1.8rem;
+        padding-bottom: 3.5vh;
+        margin-top: 4vh;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+    }
+    p {
+        line-height: 1.6;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+    }
+    .CEO {
+        background-image: url(../images/take_2_CEO_2.jpg);
+        overflow: hidden;
+    }
+    #catch {
+        writing-mode: vertical-rl;
+        text-orientation: opright;
+        font-size: 2rem;
+        text-align: left;
+        display: inline-block;
+        padding-left: 33vh;
+        padding-top: 12.2vh;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+    }
+    #position {
+        text-align: center;
+        margin-top: 8vh;
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: 0.2vh;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+    #name {
+        text-align: center;
+        margin-top: 0.2vh;
+        margin-left:0;
+        font-size: 2.5rem;
+        padding-left: 0vh;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+    }
+    .policy {
+        background-image: url(../images/take_3_policy_2.jpg);
+        text-align: left;
+        padding-top: 10vh;
+    }
+    .slogan1 {
+        text-align: center;
+        font-size: 1.8rem;
+        padding-top: 10vh;
+        padding-left: 0;
+        padding-bottom: 8vh;
+        padding-left:0;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+    }
+    #slogan2 {
+        text-align: center;
+        line-height: 1.4;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        margin-left: 7vh;
+        margin-right: 7vh;
+    }
+    .title2 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        padding-bottom: 2rem;
+    }
+    .mission1 {
+        background-image: url(..//images/take_4_mob_2.jpg);
+        display: block;
+        flex-direction:row;
+        align-items: center;
+        padding-top: 24vh;
+    }
+    .id {
+        max-width: 900px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        padding: 0 0.8rem;
+        text-align: center;
+    }
+    .content1{
+        text-align: center;
+        text-align: left;
+        display: inline-block;
+    }
+    .content1 tr {
+        font-size: 0.9rem;
+        margin-bottom: .5rem;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+    }
+    .content1 td {
+        padding-left: 1rem;
+    }
+    
+
+    .mission2 {
+        background-image: url(..//images/take_5_boss_2.jpg);
+        display: block;
+        flex-direction:row;
+        align-items: center;
+        padding-top: 24vh;
+    }
+
+    .raid {
+        max-width: 900px;
+        margin: 0 0 0 0;
+        margin-right: 0;
+        padding: 0 0.8rem;
+        text-align: center;
+    }
+    .title3 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        margin-top: 2vh;
+    }
+    #tyui {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+}
